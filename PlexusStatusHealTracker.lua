@@ -35,9 +35,6 @@ PlexusStatusHealTracker.defaultDB = {
 }
 for _, spellID in ipairs({
     -- Druid
-    145205,  -- Efflorescence
-    48438,   -- Wild Growth
-    740,    -- Tranquility (channelled + hits all targets(45yrds))
     391888,    -- Adaptive Swarm
     392325,    -- Verdancy
     145108,    -- Ysera's Gift
@@ -45,16 +42,15 @@ for _, spellID in ipairs({
     -- Monk
     123986, -- Chi Burst
     115098, -- Chi Wave
-    191837, -- Essence Font
     196725, -- Refreshing Jade Wind
-    325197, -- Invoke Chi-Ji the Red Crane
+    343819, -- Gust of Mists
     374586, -- Invigorating Mists
     274909, -- Rising Mist (talent)
-    388023, -- Ancient Teachings of the Monastery
+    388024, -- Ancient Teachings
     388193, -- Faeline Stomp
     388779, -- Awakened Faeline
     388038, -- Yu'lon's Whisper
-    388551, -- Uplifted Spirits
+    399491, -- Sheilun's Gift
     -- Paladin
     114158, -- Arcing Light (talent: Light's Hammer)
     114852, -- Holy Prism (talent, cast on enemy target)
@@ -80,23 +76,16 @@ for _, spellID in ipairs({
     157503, -- Cloudburst
     383222, -- Overflowing Shores
     114911, -- Ancestral Guidance
-    73920,  -- Healing Rain
     --5394,   -- Healing Stream Totem (doesn't work, caster not player)
     108280, -- Healing Tide Totem
     294020, -- Restorative Mists (talent: Ascendance)
     207778, -- Downpour
     197995, -- Wellspring
-    320747, -- Surge of Earth (talent)
-    320751, -- Swarming Mist (SL Venthyr)
-    382021, -- Earthliving Weapon (talent)
     -- Evoker
-    355936, --Dream Breath (talent)
-    363534, --Rewind (talent, All In 40yrds)
     370960, --Emerald Communion (talent, 40yrds)
-    373861, --Temporal Anomaly (talent)
-    359816, --Dream Flight (talent)
     371832, --Cycle of Life (talent)
     355913, --Emerald Blossom
+    367226, --Spiritbloom
 }) do
     local name, _, icon = GetSpellInfo(spellID) --luacheck: ignore 113
     if name then
